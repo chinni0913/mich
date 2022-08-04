@@ -25,30 +25,23 @@ const Header = () => {
                         <div className="collapse navbar-collapse sub-menu-bar" id="navbarFive">
                         
                             <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                              <Link className="page-scroll" to="/">Home</Link>
-                            </li>
-                                {/* <li className="nav-item active"><a className="page-scroll" href="index.html">Home +</a>
-                                    <ul className="sub-menu">
-                                        <li><a href="index.html">Home 1</a></li>
-                                        <li><a href="index-2.html">Home 2</a></li>
-                                        <li><a href="index-3.html">Home 3</a></li>
-                                    </ul>
-                                </li> */}
                                 <li className="nav-item">
-                                  <Link to='/about' className="page-scroll">About</Link>
+                                  <Link className="page-scroll" id='header-items-home' to="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <Link className="page-scroll" to="/service">Services</Link>
+                                  <Link to='/about' className="page-scroll" id='header-items'>About Us</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <Link className="page-scroll" to="/portfolio">Portfolio</Link>
+                                  <Link className="page-scroll" id='header-items' to="/service">Services</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <Link className="page-scroll" to="/blog">blog</Link>
+                                  <Link className="page-scroll" id='header-items' to="/portfolio">Portfolio</Link>
                                 </li>
                                 <li className="nav-item">
-                                  <Link className="page-scroll" to="/contact">contact</Link>
+                                  <Link className="page-scroll" id='header-items' to="/blog">blog</Link>
+                                </li>
+                                <li className="nav-item">
+                                  <Link className="page-scroll" id='header-items' to="/contact">contact</Link>
                                 </li>
                             </ul>
                         </div>

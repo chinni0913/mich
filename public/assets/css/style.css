@@ -187,59 +187,59 @@ p {
       left: 0;
       transform: translateX(0); }
 
-#preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 9999999999;
-  background: #fdf8ef; }
-
-.loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  border-radius: 100%; }
-
-#loader-3:before, #loader-3:after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: calc(50% - 10px);
-  background-color: #feb633;
-  animation: squaremove 1s ease-in-out infinite; }
-
-#loader-3:after {
-  bottom: 0;
-  animation-delay: 0.5s; }
-
-@keyframes squaremove {
-  0%, 100% {
-    -webkit-transform: translate(0, 0) rotate(0);
-    -ms-transform: translate(0, 0) rotate(0);
-    -o-transform: translate(0, 0) rotate(0);
-    transform: translate(0, 0) rotate(0); }
-  25% {
-    -webkit-transform: translate(40px, 40px) rotate(45deg);
-    -ms-transform: translate(40px, 40px) rotate(45deg);
-    -o-transform: translate(40px, 40px) rotate(45deg);
-    transform: translate(40px, 40px) rotate(45deg); }
-  50% {
-    -webkit-transform: translate(0px, 80px) rotate(0deg);
-    -ms-transform: translate(0px, 80px) rotate(0deg);
-    -o-transform: translate(0px, 80px) rotate(0deg);
-    transform: translate(0px, 80px) rotate(0deg); }
-  75% {
-    -webkit-transform: translate(-40px, 40px) rotate(45deg);
-    -ms-transform: translate(-40px, 40px) rotate(45deg);
-    -o-transform: translate(-40px, 40px) rotate(45deg);
-    transform: translate(-40px, 40px) rotate(45deg); } }
+      #preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9999999999;
+        background: #fdf8ef; }
+      
+      .loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        border-radius: 100%; }
+      
+      #loader-3:before, #loader-3:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: calc(50% - 10px);
+        background-color: #feb633;
+        animation: squaremove 1s ease-in-out infinite; }
+      
+      #loader-3:after {
+        bottom: 0;
+        animation-delay: 0.5s; }
+      
+      @keyframes squaremove {
+        0%, 100% {
+          -webkit-transform: translate(0, 0) rotate(0);
+          -ms-transform: translate(0, 0) rotate(0);
+          -o-transform: translate(0, 0) rotate(0);
+          transform: translate(0, 0) rotate(0); }
+        25% {
+          -webkit-transform: translate(40px, 40px) rotate(45deg);
+          -ms-transform: translate(40px, 40px) rotate(45deg);
+          -o-transform: translate(40px, 40px) rotate(45deg);
+          transform: translate(40px, 40px) rotate(45deg); }
+        50% {
+          -webkit-transform: translate(0px, 80px) rotate(0deg);
+          -ms-transform: translate(0px, 80px) rotate(0deg);
+          -o-transform: translate(0px, 80px) rotate(0deg);
+          transform: translate(0px, 80px) rotate(0deg); }
+        75% {
+          -webkit-transform: translate(-40px, 40px) rotate(45deg);
+          -ms-transform: translate(-40px, 40px) rotate(45deg);
+          -o-transform: translate(-40px, 40px) rotate(45deg);
+          transform: translate(-40px, 40px) rotate(45deg); } }
 /*===========================
     2.HEADER css 
 ===========================*/
@@ -367,7 +367,9 @@ p {
         margin-right: 0; } }
     .navigation .navbar .navbar-nav .nav-item {
       position: relative;
-      margin-left: 50px; }
+      margin-left: 73px; 
+      margin-right: -20px;
+    }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .navigation .navbar .navbar-nav .nav-item {
           margin-right: 18px;
@@ -2146,11 +2148,11 @@ p {
       transition: all 0.3s ease-out 0s; }
       @media only screen and (min-width: 992px) and (max-width: 1200px) {
         .footer-area .footer-list ul li a {
-          font-size: 14px;
+          font-size: 18px;
           margin: 0 10px; } }
       @media (max-width: 767px) {
         .footer-area .footer-list ul li a {
-          font-size: 14px;
+          font-size: 18px;
           margin: 0 8px; } }
       .footer-area .footer-list ul li a:hover {
         color: #feb633; }
@@ -2198,7 +2200,7 @@ p {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  display: none;
+  /* display: none; */
   z-index: 99; }
   .back-to-top a {
     color: #fff;
@@ -2212,6 +2214,10 @@ p {
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1); }
   .back-to-top.back-to-top-2 a {
     background: #84fab0; }
+    
+    .fa-chevron-up{
+        color: #fff;
+      }
 
 /*===========================
     10.COUNTER css 
@@ -2416,16 +2422,16 @@ p {
     background-repeat: repeat;
 }
 
-/* HOME >> SLICKCAROUSEL.JSX */
-/* /Carousel bar */
-#single-client{
-  width:240%;
-  margin-left:-120%
+/* HEADER */
+#header-items{
+  font-weight: 500;
+  font-size: 18px;
 }
-@media only screen and (max-width:740px){
-  slick-resp{
-    margin-left: 50px;
-  }
+
+#header-items-home{
+  font-weight: 500;
+  font-size: 18px;
+  color: #feb633;
 }
 
 
@@ -2460,23 +2466,6 @@ p {
   font-weight: bold;
 }
 
-.shadow-effect {
-    background: #fff;
-    padding: 20px;
-    width: 135%;
-    height: 350px;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid #ECECEC;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
-  }
-  #shadow-effect p {
-    font-family: inherit;
-    font-size: 17px;
-    line-height: 1.5;
-    margin: 0 0 17px 0;
-    font-weight: 300;
-  }
   .img-circle {
     max-width: 90px;
     min-height: 90px;
@@ -2501,25 +2490,25 @@ p {
                 rgba(0, 0, 0, 0.07) 0px 8px 16px, 
                 rgba(0, 0, 0, 0.07) 0px 16px 32px, 
                 rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    border: 0.1px solid #fcd515;
     width: 98%;
   }
 
   #customer-testimonoals .owl-item.active.center .item {
     opacity: 1;
     transform: scale3d(1.0, 1.0, 1);
+    border-bottom: 3px solid #feb633;
   }
   .owl-theme .owl-dots .owl-dot span{
     width: 16px !important;
     height: 16px !important;
     margin: 5px 7px;
-    background: #fcd515 !important;
+    background: #feb633 !important;
     display: block;
     transition: opacity 200ms ease;
     border-radius: 30px;
   }
   .owl-theme .owl-dots .owl-dot.active span{
-    background: #fcd515 !important;
+    background: #feb633 !important;
     width: 100px !important;
     height: 15px !important;
     transition: width 0.8s, height 0.8s !important;

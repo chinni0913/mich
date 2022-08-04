@@ -9,6 +9,7 @@ import Blog from './Components/Blog';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import PreLoader from './Components/PreLoader';
+import ScrollButton from './Components/ScrollButton';
 
 
 function App() {
@@ -24,11 +25,10 @@ function App() {
           <Route exact path='/blog' element={<Blog />}/>
           <Route exact path='/contact' element={<Contact />}/>
         </Routes>
-        {/* <PreLoader /> */}
+        <PreLoader />
+        <ScrollButton />
         <Footer />
       </BrowserRouter>
-      
-
     </div>
   );
 }

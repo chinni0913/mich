@@ -42,9 +42,9 @@ const Carousel = () => {
             center: true,
             items: 3,
             margin: 0,
-            // autoplay: true,
+            autoplay: true,
             dots: true,
-            autoplayTimeout: 8500,
+            autoplayTimeout: 2499,
             smartSpeed: 450,
             nav: false,
             responsive: {
@@ -77,7 +77,7 @@ const Carousel = () => {
                         {
                             carousel.length === 0 ?
                             <div class="item single-client white-bg">
-                                <img class="img-circle" src={Client1} />
+                                <img class="img-circle" src={Client1} alt="" />
                                     <div class="client-info d-inline-block d-sm-flex justify-content-between">
                                         <div class="info">
                                             <h6>Rajon Rony</h6>

@@ -24,7 +24,7 @@ const Footer = () => {
                         <div className="footer-list text-center">
                             <ul>
                                 <li><Link to="/" id='footer-list-items'>Home</Link></li>
-                                <li><Link to="/about" id='footer-list-items'>About</Link></li>
+                                <li><Link to="/about" id='footer-list-items'>About Us</Link></li>
                                 <li><Link to="/service" id='footer-list-items'>Services</Link></li>
                                 <li><Link to="/portfolio" id='footer-list-items'>Portfolio</Link></li>
                                 <li><Link to="/blog" id='footer-list-items'>blog</Link></li>

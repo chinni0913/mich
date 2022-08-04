@@ -5,8 +5,8 @@ const CarouselDetails = ({testiMonialDetail}) => {
     console.log("testiMonialDetail"+testiMonialDetail)
     return (
         <>
-        <div class="item single-client white-bg">
-        <img class="img-circle" src={img} />
+        <div class="item single-client white-bg active">
+        <img class="img-circle" src={img} alt=""/>
             <div class="client-info d-inline-block d-sm-flex justify-content-between">
                 <div class="info">
                     <h6>{name}</h6>

@@ -35,7 +35,7 @@ const About = () => {
           return Math.min(oldProgress + Math.random() * 10, 85);
         });
 
-      }, 1599);
+      }, 499);
    
       return () => {
         clearInterval(timer);
@@ -44,10 +44,6 @@ const About = () => {
 
   return (
     <div>
-        
-
-
-          
 
 {/* <!--====== PAGE TITLE PART START ======--> */}
 
@@ -341,8 +337,6 @@ const About = () => {
 {/* <!--====== CLIENT PART START ======--> */}
 
 <Carousel />
-
-
 
 {/* <!--====== CLIENT PART ENDS ======--> */}
 
