@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Carousel from './Carousel';
+import Carousel from './Carousel/Carousel';
 
-const Services = () => {
+const Services = (props) => {
   return (
     <div>
           {/* <!--====== PAGE TITLE PART START ======--> */}
@@ -94,4 +94,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Services;

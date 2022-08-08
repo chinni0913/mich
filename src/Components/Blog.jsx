@@ -7,7 +7,7 @@ import Blog4 from '../images/blog-4.jpg';
 import Blog5 from '../images/blog-5.jpg';
 import Blog6 from '../images/blog-6.jpg';
 
-const Blog = () => {
+const Blog = (props) => {
   return (
     <div>
           {/* <!--====== PAGE TITLE PART START ======--> */}

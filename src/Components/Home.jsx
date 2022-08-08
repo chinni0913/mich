@@ -10,15 +10,12 @@ import Blog1 from '../images/blog-1.jpg';
 import Blog2 from '../images/blog-2.jpg';
 import Blog3 from '../images/blog-3.jpg';
 import ContactThumb from '../images/contact-thumb.jpg';
-import Carousel from './Carousel';
+import Carousel from './Carousel/Carousel';
 
-const Home = () => {
+const Home = (props) => {
 
   return (
     <div>
-
-
-
 
 {/* <!--====== BANNER PART START ======--> */}
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../images/logo.png'
+import Logo from '../images/logo.png';
+
 
 const Header = () => {
   return (
@@ -51,6 +52,7 @@ const Header = () => {
         </div> 
     </div>
 </header>
+
 
 {/* <!--====== HEADER AREA PART ENDS ======--> */}
   </>

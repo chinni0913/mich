@@ -124,23 +124,23 @@ $(function () {
             var $animatingElements = $('.single-banner[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
             doAnimations($animatingElements);
         });
-        BasicSlider.slick({
-            autoplay: true,
-            autoplaySpeed: 10000,
-            dots: false,
-            fade: true,
-            arrows: true,
-            prevArrow: '<span class="prev"><i class="fal fa-angle-left"></i></span>',
-            nextArrow: '<span class="next"><i class="fal fa-angle-right"></i></span>',
-            responsive: [
-                {
-                    breakpoint: 1330,
-                    settings: {
-                        arrows: false
-                    }
-                }
-            ]
-        });
+        // BasicSlider.slick({
+        //     autoplay: true,
+        //     autoplaySpeed: 10000,
+        //     dots: false,
+        //     fade: true,
+        //     arrows: true,
+        //     prevArrow: '<span class="prev"><i class="fal fa-angle-left"></i></span>',
+        //     nextArrow: '<span class="next"><i class="fal fa-angle-right"></i></span>',
+        //     responsive: [
+        //         {
+        //             breakpoint: 1330,
+        //             settings: {
+        //                 arrows: false
+        //             }
+        //         }
+        //     ]
+        // });
 
         function doAnimations(elements) {
             var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -165,44 +165,44 @@ $(function () {
 
 
     //===== seller Active slick slider
-    $('.client-active').slick({
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2800,
-        arrows: false,
-        speed: 2000,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: 0,
-        responsive: [
-            {
-                breakpoint: 1201,
-                settings: {
-                    slidesToShow: 3,
-                }
-        },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                }
-        },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                }
-        },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                }
-        }
-      ]
-    });
+    // $('.client-active').slick({
+    //     dots: true,
+    //     infinite: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 2800,
+    //     arrows: false,
+    //     speed: 2000,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     centerMode: true,
+    //     centerPadding: 0,
+    //     responsive: [
+    //         {
+    //             breakpoint: 1201,
+    //             settings: {
+    //                 slidesToShow: 3,
+    //             }
+    //     },
+    //         {
+    //             breakpoint: 992,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //             }
+    //     },
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //             }
+    //     },
+    //         {
+    //             breakpoint: 576,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //             }
+    //     }
+    //   ]
+    // });
 
 
 
@@ -306,11 +306,6 @@ $(function () {
         $('.single-experiences.active').removeClass('active');
         $(this).addClass('active');
     });
-
-
-
-
-
 
 
 });
